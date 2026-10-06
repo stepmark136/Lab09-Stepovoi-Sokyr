@@ -8,6 +8,7 @@
 // {
 //     Console.WriteLine($"Кабинет {room}");
 // }
+
 // int totalWeeks = 3;
 // for (int week = 1; week <= totalWeeks; week++) {
 //     for (int day = 1; day <= 5; day++) {
@@ -127,4 +128,33 @@
 //         Console.Write("*");
 //     }
 //     Console.WriteLine();
+// }
+
+
+// int N = int.Parse(Console.ReadLine());
+// int week = 0;
+// int day = 0;
+// int counter = 0;
+// bool enough = false;
+// for (int i = 1; i <= N && !enough; i++)
+// {
+//     for (int j = 1; j <= 7; j++)
+//     {
+//         if (j == 7)
+//         {
+//             continue;
+//         }
+//         counter++;
+//         if (counter == 20)
+//         {
+//             week = i;
+//             day = j;
+//             enough = true;
+//             break;
+//         }
+//     }
+// }
+// if (enough)
+// {
+//     Console.WriteLine($"Остановились на {week} неделе и {day} дне");
 // }
